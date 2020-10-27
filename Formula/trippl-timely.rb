@@ -2,16 +2,16 @@
 class TripplTimely < Formula
   desc "Easily import Jira issues to a Tripletex project."
   homepage "https://github.com/cobraz/trippl-timely"
-  version "1.0.1"
+  version "1.0.2"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/cobraz/trippl-timely/releases/download/v1.0.1/trippl-timely_1.0.1_Darwin_x86_64.tar.gz"
-    sha256 "d48bf09b031fcf0e3cabe01d3182e8d5249bd8ba6b07f905d58325799ddb30ef"
+    url "https://github.com/cobraz/trippl-timely/releases/download/v1.0.2/trippl-timely_1.0.2_Darwin_x86_64.tar.gz"
+    sha256 "fcb0716f7e745981ca0d8be2635777e30ec7e45c97da30c966e7655d470ba63e"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/cobraz/trippl-timely/releases/download/v1.0.1/trippl-timely_1.0.1_Linux_x86_64.tar.gz"
-      sha256 "4842e07f2b25f814a79998ea5fd2677d60c3fd6473846acd160426f87a4a5141"
+      url "https://github.com/cobraz/trippl-timely/releases/download/v1.0.2/trippl-timely_1.0.2_Linux_x86_64.tar.gz"
+      sha256 "9dcb72ddb857fd10b7440e40333a966e89ffa0922850c1c79a82808207be58ab"
     end
   end
 
