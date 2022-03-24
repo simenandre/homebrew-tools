@@ -5,32 +5,43 @@
 class TripplTimely < Formula
   desc "Easily import Jira issues to a Tripletex project."
   homepage "https://github.com/cobraz/trippl-timely"
-  version "2.1.2"
-  bottle :unneeded
+  version "2.1.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cobraz/trippl-timely/releases/download/v2.1.2/trippl-timely_2.1.2_Darwin_x86_64.tar.gz"
-      sha256 "c3881d1d260a5b0ee707bbb1bc78973cd53942d7babf43c6922820497e9f8066"
+      url "https://github.com/cobraz/trippl-timely/releases/download/v2.1.3/trippl-timely_2.1.3_Darwin_x86_64.tar.gz"
+      sha256 "bb3d1565dd3c23072c2d70e37d9ea6e2423884e4e3b6e9c0642a609b7d95fde2"
+
+      def install
+        bin.install "trippl-timely"
+      end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cobraz/trippl-timely/releases/download/v2.1.2/trippl-timely_2.1.2_Darwin_arm64.tar.gz"
-      sha256 "d3579e5c6ef5ec1abcf8e5865f0eca069d8510f5c1bc2e0b184e444457399f8c"
+      url "https://github.com/cobraz/trippl-timely/releases/download/v2.1.3/trippl-timely_2.1.3_Darwin_arm64.tar.gz"
+      sha256 "e2d839a9b9770ea0e65ee3d4070caec4d74bb589575425f8bd4ff4e842002bc4"
+
+      def install
+        bin.install "trippl-timely"
+      end
     end
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/cobraz/trippl-timely/releases/download/v2.1.2/trippl-timely_2.1.2_Linux_x86_64.tar.gz"
-      sha256 "160b6c5d701edb6a7df5b7c0e7c5016d065b84ea0d783fbbf88ec7f01ad8ae0a"
-    end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cobraz/trippl-timely/releases/download/v2.1.2/trippl-timely_2.1.2_Linux_arm64.tar.gz"
-      sha256 "9a038f3baef4061b8759e96b729bd8947fe82cb28f2adf021d08261fbb12fa13"
-    end
-  end
+      url "https://github.com/cobraz/trippl-timely/releases/download/v2.1.3/trippl-timely_2.1.3_Linux_arm64.tar.gz"
+      sha256 "6140ad27af5e981da4cd8706eadbe1db10bb3cfd191174be4d1bc5f4fc4db74b"
 
-  def install
-    bin.install "trippl-timely"
+      def install
+        bin.install "trippl-timely"
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/cobraz/trippl-timely/releases/download/v2.1.3/trippl-timely_2.1.3_Linux_x86_64.tar.gz"
+      sha256 "22c53373c0ed7e42492dd363f8658cb533f66b5a958ba4a38a64def12302bf0b"
+
+      def install
+        bin.install "trippl-timely"
+      end
+    end
   end
 end
