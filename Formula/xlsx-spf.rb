@@ -1,8 +1,8 @@
 class XlsxSpf < Formula
   version '1.0.0'
   homepage 'https://github.com/cobraz/xlsx-spf'
-  url "https://github.com/cobraz/xlsx-spf/releases/download/v1.0.0/xlsx-spf_darwin_amd64.zip"
-  sha256 '5ff2dfdb069e4792df322b859ab28b56a9510ad5c89011e5cef5586b0e39fa99'
+  url "https://github.com/cobraz/xlsx-spf/archive/v1.1.0.tar.gz"
+  sha256 'e5d189eaa0df914838d89a7640a782a4e0c476ad728885717d150e6f713baa92'
   head 'https://github.com/cobraz/xlsx-spf.git'
 
   head do
