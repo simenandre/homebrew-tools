@@ -1,9 +1,9 @@
 class Mt < Formula
   desc "Enough talk, show me TODOs"
-  version "v0.0.0"
+  version "v0.0.2"
   homepage "https://github.com/simenandre/mt"
-  url "https://github.com/simenandre/mt/archive/refs/tags/v0.0.1.zip"
-  sha256 "47d5a7ee17c7280291d18e5de27ee4ed1abf81fa3ec37e6f7b581bb0703b4a7d"
+  url "https://github.com/simenandre/mt/releases/download/v0.0.2/mt-v0.0.2.tar.gz"
+  sha256 "f15444d4de118cf93fe887cd7c8ddeeb57d524d7b636168ec093a55a7319e18c"
   license "Apache-2.0"
 
   def install
